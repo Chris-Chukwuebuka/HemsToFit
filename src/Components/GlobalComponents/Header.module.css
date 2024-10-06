@@ -1,0 +1,104 @@
+/* Header.module.css */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    min-width: 180px;
+    max-width: 220px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.sidebar.active {
+    margin-left: -250px;
+}
+
+.sidebarHeader {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+.components p {
+    color: #fff;
+    padding: 10px;
+}
+
+.components li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.components li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+.components li.active > a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+.CTAs {
+    padding: 20px;
+}
+
+.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+.article,
+.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.logoContainer {
+    display: none; /* Hide logo by default */
+}
+
+/* Media Queries */
+@media (min-width: 800px) {
+    .logoContainer {
+        display: block; /* Show logo on smaller screens */
+        margin-left: 10px; /* Adjust margin if necessary */
+    }
+}
+@media screen and (min-width: 900px) {
+    .sidebar {
+display: none;    }
+    
+    
+}
+
+/* Center nav links */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
